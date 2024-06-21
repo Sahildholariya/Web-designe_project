@@ -441,9 +441,10 @@ nav label {
 
 /* *************  Section-6 ************* */
 
+
 .section-6 {
     padding: 300px 0px 200px 0px;
-    background: url(./images/burger-image.png);
+    background:   url(./images/burger-image.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -452,7 +453,19 @@ nav label {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    position: relative;
 }
+
+.section-6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 16, 16, 0.5);
+}
+
 
 .section-6 p {
     width: 50%;
@@ -461,6 +474,7 @@ nav label {
     font-weight: 700;
     font-family: "Archivo";
     text-align: center;
+    z-index: 4;
 }
 
 .section-6 h5 {
@@ -469,7 +483,10 @@ nav label {
     font-weight: 400;
     font-family: "Calistoga";
     text-align: center;
+    z-index: 4  ;
 }
+
+
 
 
 
